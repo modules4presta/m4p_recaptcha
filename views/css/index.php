@@ -1,7 +1,7 @@
 <?php
 
 /**
- * m4precaptcha
+ * m4p_recaptcha
  *
  * @author    Modules4Presta <contact@modules4presta.io>
  * @copyright 2026 Nice Code sp. z o.o. (Modules4Presta)

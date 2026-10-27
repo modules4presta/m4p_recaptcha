@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <module>
-    <name>m4precaptcha</name>
+    <name>m4p_recaptcha</name>
     <displayName><![CDATA[reCAPTCHA v3]]></displayName>
     <version><![CDATA[1.1.0]]></version>
     <description><![CDATA[Protects the contact, login, registration and product review forms with reCAPTCHA v3.]]></description>

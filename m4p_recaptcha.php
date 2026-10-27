@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 /**
- * m4precaptcha
+ * m4p_recaptcha
  *
  * @author    Modules4Presta <contact@modules4presta.io>
  * @copyright 2026 Nice Code sp. z o.o. (Modules4Presta)
@@ -16,7 +16,7 @@ if (!defined('_PS_VERSION_')) {
 
 require_once __DIR__ . '/classes/M4pRecaptchaVerifier.php';
 
-class M4pRecaptcha extends Module
+class M4p_Recaptcha extends Module
 {
     public const ACTION_CONTACT = 'contact';
     public const ACTION_LOGIN = 'login';
@@ -50,7 +50,7 @@ class M4pRecaptcha extends Module
 
     public function __construct()
     {
-        $this->name = 'm4precaptcha';
+        $this->name = 'm4p_recaptcha';
         $this->tab = 'front_office_features';
         $this->version = '1.1.0';
         $this->author = 'Modules4Presta';
@@ -207,13 +207,13 @@ class M4pRecaptcha extends Module
         }
 
         $this->context->controller->registerJavascript(
-            'm4precaptcha',
-            'modules/' . $this->name . '/views/js/m4precaptcha.js',
+            'm4p_recaptcha',
+            'modules/' . $this->name . '/views/js/m4p_recaptcha.js',
             ['position' => 'bottom', 'priority' => 200]
         );
         $this->context->controller->registerStylesheet(
-            'm4precaptcha',
-            'modules/' . $this->name . '/views/css/m4precaptcha.css',
+            'm4p_recaptcha',
+            'modules/' . $this->name . '/views/css/m4p_recaptcha.css',
             ['media' => 'all', 'priority' => 200]
         );
 
