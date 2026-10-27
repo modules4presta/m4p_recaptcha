@@ -1,5 +1,5 @@
 {
-    "name": "modules4presta/m4precaptcha",
+    "name": "modules4presta/m4p_recaptcha",
     "description": "Protects the contact, login, registration and product review forms with reCAPTCHA v3.",
     "type": "prestashop-module",
     "license": "MIT",
