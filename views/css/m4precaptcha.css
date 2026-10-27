@@ -1,0 +1,12 @@
+/*
+ * m4precaptcha
+ *
+ * @author    Modules4Presta <contact@modules4presta.io>
+ * @copyright 2026 Nice Code sp. z o.o. (Modules4Presta)
+ * @license   https://opensource.org/licenses/MIT MIT License
+ */
+
+/* Google allows hiding the badge when the form carries the attribution note. */
+.grecaptcha-badge {
+  visibility: hidden;
+}

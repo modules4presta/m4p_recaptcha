@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="module" source-language="en-US" target-language="pl-PL" datatype="plaintext">
+    <body>
+      <trans-unit id="3d197d2c2876706202b5767c6fb2646b">
+        <source>reCAPTCHA v3</source>
+        <target>reCAPTCHA v3</target>
+      </trans-unit>
+      <trans-unit id="0a27cc5667fa8d1db5a08f651650d201">
+        <source>Protects the contact, login, registration and product review forms with reCAPTCHA v3.</source>
+        <target>Zabezpiecza formularze kontaktu, logowania, rejestracji i opinii o produkcie przez reCAPTCHA v3.</target>
+      </trans-unit>
+      <trans-unit id="01f510c9ef2d8419655b4d2f65e685a4">
+        <source>Protect the contact form</source>
+        <target>Zabezpiecz formularz kontaktowy</target>
+      </trans-unit>
+      <trans-unit id="6ec665b2025392db4127257754734aa8">
+        <source>Protect the login form</source>
+        <target>Zabezpiecz formularz logowania</target>
+      </trans-unit>
+      <trans-unit id="87b869980ba74242f6f250dff64e4621">
+        <source>Protect registration</source>
+        <target>Zabezpiecz rejestrację</target>
+      </trans-unit>
+      <trans-unit id="8602a4bfa3aed75f6f068a37f1d2b1ea">
+        <source>Protect product reviews</source>
+        <target>Zabezpiecz opinie o produktach</target>
+      </trans-unit>
+      <trans-unit id="f75d8fa5c89351544d372cf90528ccf2">
+        <source>Site key</source>
+        <target>Klucz witryny</target>
+      </trans-unit>
+      <trans-unit id="c68183e01c4e894686d89eb864749a2d">
+        <source>Google Cloud → reCAPTCHA → key ID of a score-based website key (v3).</source>
+        <target>Google Cloud → reCAPTCHA → identyfikator klucza witryny typu score-based (v3).</target>
+      </trans-unit>
+      <trans-unit id="952bf87c967660b7bbd4e1eb08cefc92">
+        <source>Secret key</source>
+        <target>Klucz tajny</target>
+      </trans-unit>
+      <trans-unit id="f1ed5dab71071df11d074a44f9d1cfa6">
+        <source>The legacy secret key of the same key.</source>
+        <target>Starszy klucz tajny (legacy) tego samego klucza.</target>
+      </trans-unit>
+      <trans-unit id="04d679a2af0c9772ea82db315faf486c">
+        <source>Minimum score</source>
+        <target>Minimalny wynik</target>
+      </trans-unit>
+      <trans-unit id="dc1db450c98d8c9fcd6f5091bd1d4528">
+        <source>0.0 is certainly a bot, 1.0 certainly a human. Google recommends 0.5.</source>
+        <target>0,0 to z pewnością bot, 1,0 z pewnością człowiek. Google zaleca 0,5.</target>
+      </trans-unit>
+      <trans-unit id="c04aefc4d75d63af0ff5c07771f49453">
+        <source>Reviews module</source>
+        <target>Moduł opinii</target>
+      </trans-unit>
+      <trans-unit id="184482e450c68829cc37ae8ac580ad81">
+        <source>Technical name of the module that saves product reviews. Leave it empty to check nothing but the forms above.</source>
+        <target>Nazwa techniczna modułu zapisującego opinie o produktach. Puste pole ogranicza sprawdzanie do formularzy powyżej.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

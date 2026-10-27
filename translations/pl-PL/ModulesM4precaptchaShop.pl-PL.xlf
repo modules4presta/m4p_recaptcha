@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="module" source-language="en-US" target-language="pl-PL" datatype="plaintext">
+    <body>
+      <trans-unit id="f6fde9c42c156f8f1cdcaad8d421cb63">
+        <source>We could not confirm that you are not a robot. Please reload the page and try again.</source>
+        <target>Nie udało się potwierdzić, że to nie robot. Odśwież stronę i spróbuj ponownie.</target>
+      </trans-unit>
+      <trans-unit id="c78cbb28dfb60aa17fe79af4b6529b30">
+        <source>Protected by reCAPTCHA – the Google [1]Privacy Policy[/1] and [2]Terms of Service[/2] apply.</source>
+        <target>Chronione przez reCAPTCHA – obowiązują [1]Polityka prywatności[/1] i [2]Warunki korzystania z usługi[/2] Google.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
