@@ -59,7 +59,7 @@ If submissions start failing right after installation, the site key and the secr
 | Setting | Description |
 |---|---|
 | **Site key** | Key ID of the v3 website key, sent to the browser. |
-| **Secret key** | The legacy secret key of the same key, used for server-side verification. |
+| **Secret key** | The legacy secret key of the same key, used for server-side verification. Once saved it is not shown again; leave the field empty to keep it. |
 | **Minimum score** | 0.0 is certainly a bot, 1.0 certainly a human. Google recommends 0.5; raise it only while watching what gets rejected. |
 | **Protect the contact form** | Checks `submitMessage` on the contact page. |
 | **Protect the login form** | Checks `submitLogin` on the authentication page. |
