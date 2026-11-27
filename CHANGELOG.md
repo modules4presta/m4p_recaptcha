@@ -4,6 +4,18 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the project uses
 [semantic versioning](https://semver.org/).
 
+## [1.1.2] - 2026-11-26
+
+### Changed
+
+- The secret key is a password field: the saved key is not shown in the configuration, and an empty field keeps it.
+
+## [1.1.1] - 2026-11-24
+
+### Changed
+
+- Polish attribution note: "Formularz chroni reCAPTCHA Google: prywatność i warunki."
+
 ## [1.1.0] - 2026-10-27
 
 First open-source release, published under the MIT license.
@@ -19,7 +31,7 @@ First open-source release, published under the MIT license.
 ### Changed
 
 - Module settings and the "protected by reCAPTCHA" notice use the new translation system.
-- The reviews module is read from the configuration instead of being fixed in the code.
+- The reviews module is read from the configuration.
 
 ## [1.0.0] - 2026-10-06
 

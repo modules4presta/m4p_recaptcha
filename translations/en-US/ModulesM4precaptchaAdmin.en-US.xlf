@@ -38,6 +38,10 @@
         <source>Secret key</source>
         <target>Secret key</target>
       </trans-unit>
+      <trans-unit id="ed8a6696cb4be74928fa320b78911650">
+        <source>A secret key is saved and is not shown. Enter a new one only to replace it.</source>
+        <target>A secret key is saved and is not shown. Enter a new one only to replace it.</target>
+      </trans-unit>
       <trans-unit id="f1ed5dab71071df11d074a44f9d1cfa6">
         <source>The legacy secret key of the same key.</source>
         <target>The legacy secret key of the same key.</target>

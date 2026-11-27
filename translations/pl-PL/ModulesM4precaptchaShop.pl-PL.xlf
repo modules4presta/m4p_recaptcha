@@ -8,7 +8,7 @@
       </trans-unit>
       <trans-unit id="c78cbb28dfb60aa17fe79af4b6529b30">
         <source>Protected by reCAPTCHA – the Google [1]Privacy Policy[/1] and [2]Terms of Service[/2] apply.</source>
-        <target>Chronione przez reCAPTCHA – obowiązują [1]Polityka prywatności[/1] i [2]Warunki korzystania z usługi[/2] Google.</target>
+        <target>Formularz chroni reCAPTCHA Google: [1]prywatność[/1] i [2]warunki[/2].</target>
       </trans-unit>
     </body>
   </file>

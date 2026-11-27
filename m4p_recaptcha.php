@@ -52,7 +52,7 @@ class M4p_Recaptcha extends Module
     {
         $this->name = 'm4p_recaptcha';
         $this->tab = 'front_office_features';
-        $this->version = '1.1.0';
+        $this->version = '1.1.2';
         $this->author = 'Modules4Presta';
         $this->need_instance = 0;
         $this->ps_versions_compliancy = ['min' => '8.0.0', 'max' => _PS_VERSION_];
@@ -104,7 +104,11 @@ class M4p_Recaptcha extends Module
 
         if (Tools::isSubmit('submitM4pRecaptcha')) {
             Configuration::updateValue('M4PRECAPTCHA_SITE_KEY', trim((string) Tools::getValue('M4PRECAPTCHA_SITE_KEY')));
-            Configuration::updateValue('M4PRECAPTCHA_SECRET_KEY', trim((string) Tools::getValue('M4PRECAPTCHA_SECRET_KEY')));
+            // The saved secret never goes back to the form, so an empty field keeps it.
+            $secretKey = trim((string) Tools::getValue('M4PRECAPTCHA_SECRET_KEY'));
+            if ($secretKey !== '') {
+                Configuration::updateValue('M4PRECAPTCHA_SECRET_KEY', $secretKey);
+            }
             Configuration::updateValue('M4PRECAPTCHA_MIN_SCORE', (string) (float) Tools::getValue('M4PRECAPTCHA_MIN_SCORE'));
             $reviewModule = (string) Tools::getValue('M4PRECAPTCHA_REVIEW_MODULE');
             Configuration::updateValue(
@@ -145,10 +149,12 @@ class M4p_Recaptcha extends Module
                 ),
             ],
             [
-                'type' => 'text',
+                'type' => 'password',
                 'label' => $this->trans('Secret key', [], 'Modules.M4precaptcha.Admin'),
                 'name' => 'M4PRECAPTCHA_SECRET_KEY',
-                'desc' => $this->trans('The legacy secret key of the same key.', [], 'Modules.M4precaptcha.Admin'),
+                'desc' => Configuration::get('M4PRECAPTCHA_SECRET_KEY')
+                    ? $this->trans('A secret key is saved and is not shown. Enter a new one only to replace it.', [], 'Modules.M4precaptcha.Admin')
+                    : $this->trans('The legacy secret key of the same key.', [], 'Modules.M4precaptcha.Admin'),
             ],
             [
                 'type' => 'text',
@@ -184,7 +190,7 @@ class M4p_Recaptcha extends Module
         $helper->default_form_language = (int) Configuration::get('PS_LANG_DEFAULT');
         $helper->tpl_vars = ['fields_value' => array_combine(
             array_keys(self::SETTINGS),
-            array_map(static fn ($key) => Configuration::get($key), array_keys(self::SETTINGS))
+            array_map(static fn ($key) => $key === 'M4PRECAPTCHA_SECRET_KEY' ? '' : Configuration::get($key), array_keys(self::SETTINGS))
         )];
 
         return $helper->generateForm([[
